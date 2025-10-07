@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ROAR</string>
+    <string name="welcome_title">Welcome to ROAR</string>
+    <string name="welcome_description">Track your emotional wellbeing with daily reflections, gentle insights, and affirmations.</string>
+    <string name="welcome_button">Start Your Journey</string>
+</resources>
