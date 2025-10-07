@@ -1,9 +1,10 @@
 # ROAR App
 
-This repository contains two ways to explore the ROAR emotional wellness experience:
+This repository contains three ways to explore the ROAR emotional wellness experience:
 
 - A static marketing site at the repository root (`index.html`).
 - An iOS SwiftUI prototype located under `ios/RoarApp`.
+- An Android Jetpack Compose prototype located under `android/RoarApp`.
 
 The sections below walk through previewing each experience locally and outline quick
 steps for publishing the static site.
@@ -14,6 +15,8 @@ steps for publishing the static site.
   static web server.
 - **iOS app:** macOS with Xcode 15 (or newer) installed to build and run the
   SwiftUI project.
+- **Android app:** Android Studio Hedgehog (2023.1.1) or newer with an emulator or
+  device running API level 24+.
 
 ## Preview the web landing page locally
 
@@ -59,6 +62,18 @@ site almost anywhere. Two quick options:
    selected device.
 4. For SwiftUI canvas previews, open `RoarAppApp.swift` or `WelcomeView.swift`, then
    press the **Canvas** button in the top-right of the editor.
+
+## Run the Jetpack Compose prototype on Android
+
+1. Launch **Android Studio Hedgehog (2023.1.1)** or newer and open
+   `android/RoarApp` as the project root.
+2. Allow Gradle sync to finish. The project targets **compile SDK 34** and uses
+   Kotlin 1.9 with Material 3 Compose dependencies.
+3. Select the **`app`** configuration and run it on an emulator or physical
+   device running **Android API level 24 or higher**.
+4. The main UI is defined in `app/src/main/java/.../MainActivity.kt` within the
+   `WelcomeScreen` composable, which mirrors the SwiftUI prototype for easy design
+   parity across platforms.
 
 ## Testing checklist
 
